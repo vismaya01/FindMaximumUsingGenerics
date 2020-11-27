@@ -12,4 +12,11 @@ public class FindMaximumTest {
 		Integer result = findMax.findMax(9, 3, 5);
 		Assert.assertSame(9, result);
 	}
+	
+	@Test
+	public void givenMaxNumberAtSeondPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		Integer result = findMax.findMax(3, 9, 5);
+		Assert.assertSame(9, result);
+	}
 }
