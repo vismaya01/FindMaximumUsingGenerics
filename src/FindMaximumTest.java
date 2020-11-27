@@ -48,4 +48,26 @@ public class FindMaximumTest {
 		Float result = findMax.findMax(5.0f, 3.0f, 9.0f);
 		Assert.assertEquals(9.0, result, 0.0f);
 	}
+	
+	@Test
+	public void givenStirngMaxNumberAtFirstPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		String result = findMax.findMax("Peach","Apple","Banana");
+		System.out.println(result);
+		Assert.assertEquals("Peach", result);
+	}
+	
+	@Test
+	public void givenStringMaxNumberAtSeondPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		String result = findMax.findMax("Apple","Peach","Banana");
+		Assert.assertEquals("Peach", result);
+	}
+	
+	@Test
+	public void givenStringMaxNumberAtThirdPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		String result = findMax.findMax("Apple","Banana","Peach");
+		Assert.assertEquals("Peach", result);
+	}
 }
