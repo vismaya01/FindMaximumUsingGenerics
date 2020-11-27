@@ -19,4 +19,11 @@ public class FindMaximumTest {
 		Integer result = findMax.findMax(3, 9, 5);
 		Assert.assertSame(9, result);
 	}
+	
+	@Test
+	public void givenMaxNumberAtThirdPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		Integer result = findMax.findMax(5, 3, 9);
+		Assert.assertSame(9, result);
+	}
 }
