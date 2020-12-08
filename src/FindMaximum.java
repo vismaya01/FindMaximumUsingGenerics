@@ -22,6 +22,12 @@ public class FindMaximum<T extends Comparable<T>> {
 			if(array[i].compareTo(max) > 0)
 				max = array[i];
 		}
+		printMax(max);
 		return max;
-	}	
+	}
+	
+	private static <T> void printMax(T maximumNumbers) {
+		System.out.println("Maximum Value:" + maximumNumbers);
+
+	}
 }
