@@ -6,6 +6,13 @@ import org.junit.Assert;
 public class FindMaximumTest {
 
 	@Test
+	public void givenFiveIntegers_MaxAtAnyPosition_ShouldReturnMaximumNumber() {
+		FindMaximum<Integer> integerMaximumNumber = new FindMaximum(30, 15, 20, 85, 62);
+		Integer maximumValue = integerMaximumNumber.findMax();
+		Assert.assertEquals(85, maximumValue, 0);
+	}
+
+	@Test
 	public void givenMaxNumberAtFirstPostion_ReturnMaximumValue() {
 		FindMaximum<Integer> findMax = new FindMaximum<Integer>(9, 3, 5);
 		Integer result = findMax.findMax();
